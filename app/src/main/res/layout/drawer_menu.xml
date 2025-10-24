@@ -195,7 +195,7 @@
             app:drawableTint="?attr/color_main2_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/help" />
+            app:layout_constraintBottom_toTopOf="@id/separator_2" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:onClick="@{helpClickedListener}"
@@ -210,6 +210,7 @@
             android:drawableStart="@drawable/question"
             android:drawableEnd="@drawable/caret_right"
             android:drawablePadding="8dp"
+            android:visibility="gone"
             app:drawableTint="?attr/color_main2_500"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -2,8 +2,6 @@ import com.android.build.gradle.internal.tasks.factory.dependsOn
 import com.google.firebase.crashlytics.buildtools.gradle.CrashlyticsExtension
 import com.google.gms.googleservices.GoogleServicesPlugin
 import java.io.ByteArrayOutputStream
-import java.io.FileInputStream
-import java.util.Properties
 
 plugins {
     alias(libs.plugins.androidApplication)
@@ -22,7 +20,7 @@ val googleServices = File(projectDir.absolutePath + "/google-services.json")
 val linphoneLibs = File("$sdkPath/libs/")
 val linphoneDebugLibs = File("$sdkPath/libs-debug/")
 val firebaseCloudMessagingAvailable = googleServices.exists()
-val crashlyticsAvailable = googleServices.exists() && linphoneLibs.exists() && linphoneDebugLibs.exists()
+val crashlyticsAvailable = false
 
 if (firebaseCloudMessagingAvailable) {
     println("google-services.json found, enabling CloudMessaging feature")
@@ -116,29 +114,29 @@ android {
         variant.outputs
             .map { it as com.android.build.gradle.internal.api.BaseVariantOutputImpl }
             .forEach { output ->
-                output.outputFileName = "linphone-android-${variant.buildType.name}-${project.version}.apk"
+                output.outputFileName = "safotel-android-${variant.buildType.name}-${project.version}.apk"
             }
     }
 
-    val keystorePropertiesFile = rootProject.file("keystore.properties")
-    val keystoreProperties = Properties()
-    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
-
-    signingConfigs {
-        create("release") {
-            val keyStorePath = keystoreProperties["storeFile"] as String
-            val keyStore = project.file(keyStorePath)
-            if (keyStore.exists()) {
-                storeFile = keyStore
-                storePassword = keystoreProperties["storePassword"] as String
-                keyAlias = keystoreProperties["keyAlias"] as String
-                keyPassword = keystoreProperties["keyPassword"] as String
-                println("Signing config release is using keystore [$storeFile]")
-            } else {
-                println("Keystore [$storeFile] doesn't exists!")
-            }
-        }
-    }
+//    val keystorePropertiesFile = rootProject.file("keystore.properties")
+//    val keystoreProperties = Properties()
+//    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+//
+//    signingConfigs {
+//        create("release") {
+//            val keyStorePath = keystoreProperties["storeFile"] as String
+//            val keyStore = project.file(keyStorePath)
+//            if (keyStore.exists()) {
+//                storeFile = keyStore
+//                storePassword = keystoreProperties["storePassword"] as String
+//                keyAlias = keystoreProperties["keyAlias"] as String
+//                keyPassword = keystoreProperties["keyPassword"] as String
+//                println("Signing config release is using keystore [$storeFile]")
+//            } else {
+//                println("Keystore [$storeFile] doesn't exists!")
+//            }
+//        }
+//    }
 
     buildTypes {
         getByName("debug") {
@@ -173,7 +171,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
             )
-            signingConfig = signingConfigs.getByName("release")
+//            signingConfig = signingConfigs.getByName("release")
 
             resValue("string", "file_provider", "$packageName.fileprovider")
             resValue("string", "linphone_app_version", gitVersion.trim())
