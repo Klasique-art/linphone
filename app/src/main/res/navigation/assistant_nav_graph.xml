@@ -3,7 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/assistant_nav_graph"
-    app:startDestination="@id/thirdPartySipAccountLoginFragment">
+    app:startDestination="@id/emailSignupFragment">
+
+    <!-- ADD THIS NEW FRAGMENT -->
+    <fragment
+        android:id="@+id/emailSignupFragment"
+        android:name="org.linphone.ui.assistant.fragment.EmailSignupFragment"
+        android:label="EmailSignupFragment"
+        tools:layout="@layout/assistant_email_signup_fragment" />
 
     <fragment
         android:id="@+id/registerFragment"

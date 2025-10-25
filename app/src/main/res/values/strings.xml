@@ -1015,6 +1015,23 @@
     <string name="content_description_cancel_files_or_text_pending_sharing">Click to cancel files or text pending sharing</string>
     <string name="content_description_close_drawer_menu">Closes menu</string>
 
+    <!-- Email Signup -->
+    <string name="email_signup_title">Create Account</string>
+    <string name="email_signup_subtitle">Enter your email to get started</string>
+    <string name="email_signup_email_label">Email Address</string>
+    <string name="email_signup_email_hint">your.email@example.com</string>
+    <string name="email_signup_button">Sign Up</string>
+    <string name="email_signup_error_invalid_email">Please enter a valid email address</string>
+    <string name="email_signup_error_network">Network error. Please try again.</string>
+    <string name="email_signup_error_server">Server error. Please try again later.</string>
+    <string name="email_signup_success">Account created successfully!</string>
+
+    <!-- Ultra SIM Dialog -->
+    <string name="ultra_sim_dialog_title">Your Ultra SIM</string>
+    <string name="ultra_sim_dialog_message">Your Ultra SIM number is: <b>%1$s</b>\n\nPeople can call you using this number. Save it somewhere safe!</string>
+    <string name="ultra_sim_dialog_continue">Continue</string>
+    <string name="ultra_sim_label">Ultra SIM:</string>
+
     <!-- Copy of private hosts_allowlist_sample in androidx.car.app:app:1.7.0-beta01, as they recommend it -->
     <string-array name="hosts_allowlist_sample_copy" translatable="false">
         <item>fdb00c43dbde8b51cb312aa81d3b5fa17713adb94b28f598d77f8eb89daceedf,
