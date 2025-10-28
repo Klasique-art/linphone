@@ -971,4 +971,21 @@
     <string name="content_description_call_voicemail">Faire un appui long pour appeler la boite vocale</string>
     <string name="content_description_cancel_files_or_text_pending_sharing">Cliquer pour annuler le partage des fichiers ou du texte en attente</string>
     <string name="content_description_close_drawer_menu">Ferme le menu</string>
+    <!-- Email Signup -->
+    <string name="email_signup_title">Créer un compte</string>
+    <string name="email_signup_subtitle">Entrez votre adresse e-mail pour commencer</string>
+    <string name="email_signup_email_label">Adresse e-mail</string>
+    <string name="email_signup_email_hint">votre.email@exemple.com</string>
+    <string name="email_signup_button">S\'inscrire</string>
+    <string name="email_signup_error_invalid_email">Veuillez entrer une adresse e-mail valide</string>
+    <string name="email_signup_error_network">Erreur réseau. Veuillez réessayer.</string>
+    <string name="email_signup_error_server">Erreur du serveur. Veuillez réessayer plus tard.</string>
+    <string name="email_signup_success">Compte créé avec succès !</string>
+
+    <!-- Ultra SIM Dialog -->
+    <string name="ultra_sim_dialog_title">Votre Ultra SIM</string>
+    <string name="ultra_sim_dialog_message">Votre numéro Ultra SIM est : <b>%1$s</b>\n\nLes gens peuvent vous appeler en utilisant ce numéro. Gardez-le précieusement !</string>
+    <string name="ultra_sim_dialog_continue">Continuer</string>
+    <string name="ultra_sim_label">Ultra SIM :</string>
+
 </resources>

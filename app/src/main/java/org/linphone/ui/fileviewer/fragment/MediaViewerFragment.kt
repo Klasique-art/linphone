@@ -29,7 +29,7 @@ import android.view.ViewGroup
 import androidx.annotation.UiThread
 import androidx.lifecycle.ViewModelProvider
 import org.linphone.core.tools.Log
-import org.linphone.databinding.FileMediaViewerChildFragmentBinding
+import com.safotel.app.databinding.FileMediaViewerChildFragmentBinding
 import org.linphone.ui.fileviewer.viewmodel.MediaViewModel
 import org.linphone.ui.main.fragment.GenericMainFragment
 import org.linphone.ui.main.viewmodel.SharedMainViewModel

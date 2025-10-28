@@ -34,10 +34,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.ChatInfoFragmentBinding
-import org.linphone.databinding.ChatParticipantAdminPopupMenuBinding
+import com.safotel.app.databinding.ChatInfoFragmentBinding
+import com.safotel.app.databinding.ChatParticipantAdminPopupMenuBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.main.chat.adapter.ConversationParticipantsAdapter
 import org.linphone.ui.main.chat.model.ParticipantModel

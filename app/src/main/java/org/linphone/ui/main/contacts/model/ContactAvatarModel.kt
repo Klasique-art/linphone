@@ -23,7 +23,7 @@ import android.net.Uri
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.MutableLiveData
 import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.contacts.AbstractAvatarModel
 import org.linphone.contacts.getNativeContactPictureUri
 import org.linphone.core.Address

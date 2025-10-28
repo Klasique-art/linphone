@@ -24,7 +24,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.UiThread
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.ui.GenericFragment
 
 @UiThread

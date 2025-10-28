@@ -36,8 +36,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.linphone.R
-import org.linphone.databinding.ToastBinding
+import com.safotel.app.R                      // ← ALREADY HAVE THIS
+import com.safotel.app.databinding.ToastBinding  // ← ADD THIS LINE
 
 @UiThread
 fun View.slideInToastFromTop(

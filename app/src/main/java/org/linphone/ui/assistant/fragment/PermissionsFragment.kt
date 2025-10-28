@@ -31,10 +31,10 @@ import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.compatibility.Compatibility
 import org.linphone.core.tools.Log
-import org.linphone.databinding.AssistantPermissionsFragmentBinding
+import com.safotel.app.databinding.AssistantPermissionsFragmentBinding
 import org.linphone.ui.GenericFragment
 import org.linphone.ui.assistant.AssistantActivity
 import org.linphone.ui.assistant.viewmodel.PermissionsViewModel
@@ -180,8 +180,9 @@ class PermissionsFragment : GenericFragment() {
 
     private fun goToLoginFragment() {
         if (findNavController().currentDestination?.id == R.id.permissionsFragment) {
+            // Navigate directly to Email Signup instead of Landing page
             val action =
-                PermissionsFragmentDirections.actionPermissionsFragmentToLandingFragment()
+                PermissionsFragmentDirections.actionPermissionsFragmentToEmailSignupFragment()
             findNavController().navigate(action)
         }
     }

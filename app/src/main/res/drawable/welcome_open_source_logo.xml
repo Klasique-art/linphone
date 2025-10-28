@@ -3,11 +3,114 @@
     android:height="106dp"
     android:viewportWidth="111"
     android:viewportHeight="106">
+
+  <!-- Globe/Earth Circle -->
   <path
-      android:pathData="M61.22,72.06C68.66,69.3 72.55,63.98 72.55,54.82C72.55,45.66 64.83,37.59 55.19,37.58C45.01,37.56 37.34,45.63 37.46,54.82C37.58,64.01 41.97,70.13 48.98,72.34L36.55,102.91C19.92,98.61 3,78.98 3,54.82C3,26.2 26,3 54.82,3C83.64,3 107.01,26.2 107.01,54.82C107.01,79.36 90.25,98.71 73.26,103L61.22,72.06Z"
+      android:pathData="M55,53m-45,0a45,45 0,1,1 90,0a45,45 0,1,1 -90,0"
       android:strokeLineJoin="round"
-      android:strokeWidth="6"
+      android:strokeWidth="5"
       android:fillColor="#00000000"
-      android:strokeColor="#FF5E00"
+      android:strokeColor="#00A4FC"
       android:strokeLineCap="round"/>
+
+  <!-- Vertical meridian line -->
+  <path
+      android:pathData="M55,8 Q35,53 55,98"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <!-- Vertical meridian line (opposite) -->
+  <path
+      android:pathData="M55,8 Q75,53 55,98"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <!-- Horizontal equator -->
+  <path
+      android:pathData="M10,53 L100,53"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <!-- Upper latitude line -->
+  <path
+      android:pathData="M25,30 Q55,35 85,30"
+      android:strokeWidth="3"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <!-- Lower latitude line -->
+  <path
+      android:pathData="M25,76 Q55,71 85,76"
+      android:strokeWidth="3"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <!-- Signal waves - Top Right -->
+  <path
+      android:pathData="M75,15 Q82,10 89,15"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <path
+      android:pathData="M80,20 Q85,17 90,20"
+      android:strokeWidth="3"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <!-- Signal waves - Bottom Right -->
+  <path
+      android:pathData="M75,91 Q82,96 89,91"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <path
+      android:pathData="M80,86 Q85,89 90,86"
+      android:strokeWidth="3"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <!-- Signal waves - Top Left -->
+  <path
+      android:pathData="M35,15 Q28,10 21,15"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <path
+      android:pathData="M30,20 Q25,17 20,20"
+      android:strokeWidth="3"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <!-- Signal waves - Bottom Left -->
+  <path
+      android:pathData="M35,91 Q28,96 21,91"
+      android:strokeWidth="4"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
+  <path
+      android:pathData="M30,86 Q25,89 20,86"
+      android:strokeWidth="3"
+      android:fillColor="#00000000"
+      android:strokeColor="#00A4FC"
+      android:strokeLineCap="round"/>
+
 </vector>

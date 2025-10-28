@@ -12,7 +12,7 @@ plugins {
     alias(libs.plugins.crashlytics)
 }
 
-val packageName = "org.linphone"
+val packageName = "com.safotel.app"
 val useDifferentPackageNameForDebugBuild = false
 
 val sdkPath = providers.gradleProperty("LinphoneSdkBuildDir").get()
@@ -65,8 +65,8 @@ task("getGitVersion") {
                 gitVersionStream.toString().trim()
             } else {
                 gitVersionStream.toString().trim() + "." +
-                    gitCommitsCount.toString()
-                        .trim() + "+" + gitCommitHash.toString().trim()
+                        gitCommitsCount.toString()
+                            .trim() + "+" + gitCommitHash.toString().trim()
             }
         println("Git version: $gitVersion")
     } catch (e: Exception) {
@@ -91,15 +91,15 @@ task("linphoneSdkSource") {
 project.tasks.preBuild.dependsOn("linphoneSdkSource")
 
 android {
-    namespace = "org.linphone"
+    namespace = "com.safotel.app"
     compileSdk = 36
 
     defaultConfig {
         applicationId = packageName
         minSdk = 28
         targetSdk = 36
-        versionCode = 600019 // 6.00.019
-        versionName = "6.1.0-alpha"
+        versionCode = 1 
+        versionName = "1.0.0"
 
         manifestPlaceholders["appAuthRedirectScheme"] = packageName
 
@@ -153,6 +153,8 @@ android {
             }
             resValue("string", "linphone_app_version", gitVersion.trim())
             resValue("string", "linphone_app_branch", gitBranch.toString().trim())
+            resValue("string", "linphone_sdk_version", "5.5.0")  // ← ADD THIS
+            resValue("string", "linphone_sdk_branch", "master")  // ← ADD THIS
             resValue("string", "linphone_openid_callback_scheme", packageName)
 
             if (crashlyticsAvailable) {
@@ -176,6 +178,8 @@ android {
             resValue("string", "file_provider", "$packageName.fileprovider")
             resValue("string", "linphone_app_version", gitVersion.trim())
             resValue("string", "linphone_app_branch", gitBranch.toString().trim())
+            resValue("string", "linphone_sdk_version", "5.5.0")  // ← ADD THIS
+            resValue("string", "linphone_sdk_branch", "master")  // ← ADD THIS
             resValue("string", "linphone_openid_callback_scheme", packageName)
 
             if (crashlyticsAvailable) {
@@ -235,9 +239,16 @@ dependencies {
     // To be able to parse native crash tombstone and print them with SDK logs the next time the app will start
     implementation(libs.google.protobuf)
 
+    // implementation(platform(libs.google.firebase.bom))
+    // implementation(libs.google.firebase.messaging)
+    // implementation(libs.google.firebase.crashlytics)
+
+    // Firebase - only if google-services.json exists
+if (firebaseCloudMessagingAvailable) {
     implementation(platform(libs.google.firebase.bom))
     implementation(libs.google.firebase.messaging)
     implementation(libs.google.firebase.crashlytics)
+}
 
     // https://github.com/coil-kt/coil/blob/main/LICENSE.txt Apache v2.0
     implementation(libs.coil)

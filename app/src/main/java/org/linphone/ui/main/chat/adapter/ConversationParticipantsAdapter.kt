@@ -27,8 +27,8 @@ import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.R
-import org.linphone.databinding.ChatParticipantListCellBinding
+import com.safotel.app.R
+import com.safotel.app.databinding.ChatParticipantListCellBinding
 import org.linphone.ui.main.chat.model.ParticipantModel
 
 class ConversationParticipantsAdapter : ListAdapter<ParticipantModel, RecyclerView.ViewHolder>(

@@ -31,9 +31,9 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.LinphoneApplication.Companion.corePreferences
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.StartCallFragmentBinding
+import com.safotel.app.databinding.StartCallFragmentBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.main.fragment.GenericAddressPickerFragment
 import org.linphone.ui.main.history.viewmodel.StartCallViewModel

@@ -44,11 +44,11 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import org.linphone.LinphoneApplication.Companion.coreContext
 import java.io.File
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.FriendList
 import org.linphone.core.tools.Log
-import org.linphone.databinding.ContactsListFilterPopupMenuBinding
-import org.linphone.databinding.ContactsListFragmentBinding
+import com.safotel.app.databinding.ContactsListFilterPopupMenuBinding
+import com.safotel.app.databinding.ContactsListFragmentBinding
 import org.linphone.ui.main.MainActivity
 import org.linphone.ui.main.contacts.adapter.ContactsListAdapter
 import org.linphone.ui.main.contacts.model.ContactAvatarModel

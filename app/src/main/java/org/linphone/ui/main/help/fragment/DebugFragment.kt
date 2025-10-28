@@ -30,9 +30,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.HelpDebugFragmentBinding
+import com.safotel.app.databinding.HelpDebugFragmentBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.assistant.AssistantActivity
 import org.linphone.ui.fileviewer.FileViewerActivity

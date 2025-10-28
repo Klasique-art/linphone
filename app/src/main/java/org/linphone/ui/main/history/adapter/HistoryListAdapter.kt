@@ -28,8 +28,8 @@ import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.R
-import org.linphone.databinding.HistoryListCellBinding
+import com.safotel.app.R
+import com.safotel.app.databinding.HistoryListCellBinding
 import org.linphone.ui.main.history.model.CallLogModel
 import org.linphone.utils.Event
 

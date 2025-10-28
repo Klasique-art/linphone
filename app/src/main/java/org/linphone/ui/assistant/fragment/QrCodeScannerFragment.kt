@@ -32,9 +32,9 @@ import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.AssistantQrCodeScannerFragmentBinding
+import com.safotel.app.databinding.AssistantQrCodeScannerFragmentBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.GenericFragment
 import org.linphone.ui.assistant.viewmodel.QrCodeViewModel

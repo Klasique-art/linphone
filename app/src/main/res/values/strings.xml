@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <!DOCTYPE resources [
-    <!ENTITY appName "Safotel">
+    <!ENTITY appName "safotel">
 ]>
 
 <resources>
-    <string name="app_name" translatable="false">Safotel</string>
+    <string name="app_name" translatable="false">safotel</string>
 
     <!-- Not translatable strings -->
     <string name="vertical_separator" translatable="false">|</string>
@@ -125,7 +125,7 @@
     <string name="welcome_page_1_message">A <b>secured</b> and transparent communication app.</string>
     <string name="welcome_page_2_title">Secured</string>
     <string name="welcome_page_2_message">Your communications are safe thanks to our <b>end-to-end encryption</b>.</string>
-    <string name="welcome_page_3_title">Open source</string>
+    <string name="welcome_page_3_title">Available</string>
     <string name="welcome_page_3_message"><b>Designed</b> to keep you connected anytime, <b>anywhere</b>.</string>
 
     <!-- Generic toasts -->

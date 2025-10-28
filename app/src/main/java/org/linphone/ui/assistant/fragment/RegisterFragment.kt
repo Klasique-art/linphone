@@ -39,9 +39,9 @@ import androidx.navigation.navGraphViewModels
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.AssistantRegisterFragmentBinding
+import com.safotel.app.databinding.AssistantRegisterFragmentBinding
 import org.linphone.ui.GenericFragment
 import org.linphone.ui.assistant.viewmodel.AccountCreationViewModel
 import org.linphone.utils.ConfirmationDialogModel

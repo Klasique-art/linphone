@@ -27,7 +27,7 @@ import java.util.Calendar
 import java.util.Date
 import java.util.Locale
 import java.util.TimeZone
-import org.linphone.R
+import com.safotel.app.R
 
 class TimestampUtils {
     companion object {

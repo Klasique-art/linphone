@@ -30,9 +30,9 @@ import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.R
-import org.linphone.databinding.RecordingListCellBinding
-import org.linphone.databinding.RecordingsListDecorationBinding
+import com.safotel.app.R
+import com.safotel.app.databinding.RecordingListCellBinding
+import com.safotel.app.databinding.RecordingsListDecorationBinding
 import org.linphone.ui.main.recordings.model.RecordingModel
 import org.linphone.utils.Event
 import org.linphone.utils.HeaderAdapter

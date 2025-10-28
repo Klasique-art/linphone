@@ -23,12 +23,11 @@ import androidx.annotation.UiThread
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.google.firebase.FirebaseApp
 import kotlinx.coroutines.launch
-import org.linphone.BuildConfig
+import com.safotel.app.BuildConfig
 import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.LinphoneApplication.Companion.corePreferences
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.Core
 import org.linphone.core.CoreListenerStub
 import org.linphone.core.VersionUpdateCheckResult
@@ -39,8 +38,8 @@ import org.linphone.utils.Event
 import org.linphone.utils.FileUtils
 
 class HelpViewModel
-    @UiThread
-    constructor() : GenericViewModel() {
+@UiThread
+constructor() : GenericViewModel() {
     companion object {
         private const val TAG = "[Help ViewModel]"
 
@@ -148,11 +147,23 @@ class HelpViewModel
         sdkVersion.value = coreContext.sdkVersion
         logsUploadInProgress.value = false
 
+        // Firebase support - will work automatically when you add google-services.json
         try {
-            firebaseProjectId.value = FirebaseApp.getInstance().options.projectId
+            val firebaseAppClass = Class.forName("com.google.firebase.FirebaseApp")
+            val getInstanceMethod = firebaseAppClass.getMethod("getInstance")
+            val firebaseApp = getInstanceMethod.invoke(null)
+            val getOptionsMethod = firebaseAppClass.getMethod("getOptions")
+            val options = getOptionsMethod.invoke(firebaseApp)
+            val getProjectIdMethod = options.javaClass.getMethod("getProjectId")
+            val projectId = getProjectIdMethod.invoke(options) as? String
+            firebaseProjectId.value = projectId ?: "Not configured"
+            Log.i("$TAG Firebase project ID: $projectId")
+        } catch (e: ClassNotFoundException) {
+            Log.i("$TAG Firebase not available (google-services.json not configured)")
+            firebaseProjectId.value = "Not configured"
         } catch (e: Exception) {
             Log.e("$TAG Failed to get FirebaseApp instance: $e")
-            firebaseProjectId.value = "unknown"
+            firebaseProjectId.value = "Error"
         }
 
         versionClickCount = if (corePreferences.showDeveloperSettings) {

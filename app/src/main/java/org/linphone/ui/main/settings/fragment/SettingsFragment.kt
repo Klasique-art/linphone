@@ -32,10 +32,10 @@ import android.widget.ArrayAdapter
 import androidx.annotation.UiThread
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.compatibility.Compatibility
 import org.linphone.core.tools.Log
-import org.linphone.databinding.SettingsFragmentBinding
+import com.safotel.app.databinding.SettingsFragmentBinding
 import org.linphone.ui.main.fragment.GenericMainFragment
 import org.linphone.utils.ConfirmationDialogModel
 import org.linphone.ui.main.settings.viewmodel.SettingsViewModel

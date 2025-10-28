@@ -32,9 +32,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView.AdapterDataObserver
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.MeetingsListFragmentBinding
+import com.safotel.app.databinding.MeetingsListFragmentBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.main.fragment.AbstractMainFragment
 import org.linphone.utils.ConfirmationDialogModel

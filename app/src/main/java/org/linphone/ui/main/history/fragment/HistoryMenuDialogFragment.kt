@@ -29,7 +29,7 @@ import androidx.annotation.UiThread
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import org.linphone.databinding.HistoryListLongPressMenuBinding
+import com.safotel.app.databinding.HistoryListLongPressMenuBinding
 
 @UiThread
 class HistoryMenuDialogFragment(

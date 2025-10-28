@@ -59,10 +59,10 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.LinphoneApplication.Companion.corePreferences
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.compatibility.Compatibility
 import org.linphone.core.tools.Log
-import org.linphone.databinding.MainActivityBinding
+import com.safotel.app.databinding.MainActivityBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.assistant.AssistantActivity
 import org.linphone.ui.main.chat.fragment.ConversationsListFragmentDirections

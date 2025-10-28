@@ -26,9 +26,9 @@ import android.view.ViewGroup
 import androidx.annotation.UiThread
 import androidx.core.view.doOnPreDraw
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.StartChatFragmentBinding
+import com.safotel.app.databinding.StartChatFragmentBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.main.chat.viewmodel.StartConversationViewModel
 import org.linphone.ui.main.fragment.GenericAddressPickerFragment

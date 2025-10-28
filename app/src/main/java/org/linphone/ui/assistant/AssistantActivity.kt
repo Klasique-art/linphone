@@ -34,10 +34,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import kotlin.math.max
 import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.compatibility.Compatibility
 import org.linphone.core.tools.Log
-import org.linphone.databinding.AssistantActivityBinding
+import com.safotel.app.databinding.AssistantActivityBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.assistant.fragment.PermissionsFragmentDirections
 

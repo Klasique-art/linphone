@@ -39,10 +39,10 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.io.File
 import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.LinphoneApplication.Companion.corePreferences
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.Factory
 import org.linphone.core.tools.Log
-import org.linphone.databinding.ContactFragmentBinding
+import com.safotel.app.databinding.ContactFragmentBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.main.contacts.model.ContactTrustDialogModel
 import org.linphone.ui.main.contacts.model.NumberOrAddressPickerDialogModel

@@ -38,6 +38,7 @@ import com.google.android.material.color.DynamicColors
 import org.linphone.compatibility.Compatibility
 import org.linphone.core.CoreContext
 import org.linphone.core.CorePreferences
+import com.safotel.app.R
 import org.linphone.core.Factory
 import org.linphone.core.LogCollectionState
 import org.linphone.core.LogLevel

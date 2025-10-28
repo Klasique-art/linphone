@@ -17,9 +17,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.linphone.LinphoneApplication.Companion.corePreferences
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.FileMediaViewerActivityBinding
+import com.safotel.app.databinding.FileMediaViewerActivityBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.fileviewer.adapter.MediaListAdapter
 import org.linphone.ui.fileviewer.viewmodel.MediaListViewModel

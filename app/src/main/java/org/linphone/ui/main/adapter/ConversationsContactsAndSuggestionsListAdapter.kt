@@ -30,11 +30,11 @@ import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.R
-import org.linphone.databinding.GenericAddressPickerContactListCellBinding
-import org.linphone.databinding.GenericAddressPickerConversationListCellBinding
-import org.linphone.databinding.GenericAddressPickerListDecorationBinding
-import org.linphone.databinding.GenericAddressPickerSuggestionListCellBinding
+import com.safotel.app.R
+import com.safotel.app.databinding.GenericAddressPickerContactListCellBinding
+import com.safotel.app.databinding.GenericAddressPickerConversationListCellBinding
+import com.safotel.app.databinding.GenericAddressPickerListDecorationBinding
+import com.safotel.app.databinding.GenericAddressPickerSuggestionListCellBinding
 import org.linphone.ui.main.model.ConversationContactOrSuggestionModel
 import org.linphone.utils.AppUtils
 import org.linphone.utils.Event

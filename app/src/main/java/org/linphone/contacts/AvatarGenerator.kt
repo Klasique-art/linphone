@@ -31,7 +31,7 @@ import android.util.TypedValue
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.IconCompat
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.utils.AppUtils
 import androidx.core.graphics.createBitmap
 import androidx.core.graphics.drawable.toDrawable

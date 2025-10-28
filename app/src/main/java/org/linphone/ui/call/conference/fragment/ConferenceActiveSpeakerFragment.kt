@@ -27,9 +27,9 @@ import androidx.annotation.UiThread
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.CallConferenceActiveSpeakerFragmentBinding
+import com.safotel.app.databinding.CallConferenceActiveSpeakerFragmentBinding
 import org.linphone.ui.call.conference.viewmodel.ConferenceViewModel
 import org.linphone.ui.call.fragment.GenericCallFragment
 import org.linphone.ui.call.viewmodel.CurrentCallViewModel

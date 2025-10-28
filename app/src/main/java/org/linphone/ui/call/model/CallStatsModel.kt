@@ -22,7 +22,7 @@ package org.linphone.ui.call.model
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.MutableLiveData
 import kotlin.math.roundToInt
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.Call
 import org.linphone.core.CallStats
 import org.linphone.core.MediaDirection

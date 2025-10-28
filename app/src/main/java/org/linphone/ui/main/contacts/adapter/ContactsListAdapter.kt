@@ -28,9 +28,9 @@ import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.R
-import org.linphone.databinding.ContactFavouriteListCellBinding
-import org.linphone.databinding.ContactListCellBinding
+import com.safotel.app.R
+import com.safotel.app.databinding.ContactFavouriteListCellBinding
+import com.safotel.app.databinding.ContactListCellBinding
 import org.linphone.ui.main.contacts.model.ContactAvatarModel
 import org.linphone.utils.Event
 

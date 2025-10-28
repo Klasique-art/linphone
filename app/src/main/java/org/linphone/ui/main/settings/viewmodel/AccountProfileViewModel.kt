@@ -29,7 +29,7 @@ import java.util.Locale
 import kotlinx.coroutines.launch
 import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.LinphoneApplication.Companion.corePreferences
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.Account
 import org.linphone.core.AccountDevice
 import org.linphone.core.AccountManagerServices

@@ -29,9 +29,9 @@ import androidx.core.view.doOnPreDraw
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.ChatMessageForwardFragmentBinding
+import com.safotel.app.databinding.ChatMessageForwardFragmentBinding
 import org.linphone.ui.main.adapter.ConversationsContactsAndSuggestionsListAdapter
 import org.linphone.ui.main.chat.viewmodel.ConversationForwardMessageViewModel
 import org.linphone.ui.main.contacts.model.ContactNumberOrAddressModel

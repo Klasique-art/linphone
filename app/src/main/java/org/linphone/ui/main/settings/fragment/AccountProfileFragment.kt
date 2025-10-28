@@ -36,9 +36,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.navigation.navGraphViewModels
 import kotlinx.coroutines.launch
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.AccountProfileFragmentBinding
+import com.safotel.app.databinding.AccountProfileFragmentBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.main.fragment.GenericMainFragment
 import org.linphone.utils.ConfirmationDialogModel

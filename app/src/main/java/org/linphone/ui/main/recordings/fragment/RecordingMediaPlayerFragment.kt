@@ -33,9 +33,9 @@ import java.io.File
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.RecordingPlayerFragmentBinding
+import com.safotel.app.databinding.RecordingPlayerFragmentBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.main.fragment.GenericMainFragment
 import org.linphone.ui.main.recordings.viewmodel.RecordingMediaPlayerViewModel

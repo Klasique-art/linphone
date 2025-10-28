@@ -25,9 +25,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.UiThread
 import androidx.navigation.navGraphViewModels
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.AccountProfileSecureModeFragmentBinding
+import com.safotel.app.databinding.AccountProfileSecureModeFragmentBinding
 import org.linphone.ui.main.fragment.GenericMainFragment
 import org.linphone.ui.main.settings.viewmodel.AccountProfileViewModel
 

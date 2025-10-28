@@ -30,7 +30,7 @@ import org.linphone.core.CoreListenerStub
 import org.linphone.core.tools.Log
 import org.linphone.ui.GenericViewModel
 import org.linphone.utils.Event
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.GlobalState
 
 class QrCodeViewModel

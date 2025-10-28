@@ -103,6 +103,16 @@
             app:popExitAnim="@anim/slide_out_right"
             app:launchSingleTop="true" />
 
+        <!-- ADD THIS NEW ACTION -->
+        <action
+            android:id="@+id/action_permissionsFragment_to_emailSignupFragment"
+            app:destination="@id/emailSignupFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:launchSingleTop="true" />
+
     </fragment>
 
     <action

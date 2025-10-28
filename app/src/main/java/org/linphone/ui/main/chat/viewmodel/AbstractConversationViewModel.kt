@@ -25,7 +25,7 @@ import androidx.annotation.UiThread
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.MutableLiveData
 import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.R
+import com.safotel.app.R
 import org.linphone.core.Address
 import org.linphone.core.ChatRoom
 import org.linphone.core.MediaDirection
